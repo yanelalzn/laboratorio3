@@ -6,17 +6,57 @@
     <title>Formulario3</title>
 </head>
 <body>
-    <form action="">
-        <table border="1" whith="100%">
+    <form>
+        <table border="0" width="100%">
             <tr>
                 <th colspan="4">Datos Personales</th>
             </tr>
             <tr>
 				<td width="20%" ></td>
 				<td width="30%" ><label for="name">Nombre y apellidos</label></td>
-				<td width="30%" ><input type="text" name="name" id="name"></td>
+				<td width="30%" ><input type="text" name="name" id="name" placeholder="Ingresar Nombre y Apellido"></td>
 				<td width="20%" ></td>
 			</tr>
+            <tr>
+                <td width="20%"></td>
+                <td width="30%"><label for="direccion">Dirección</label> </td>
+                <td width="30%"><input type="text" name="direccion" id="direccion" placeholder="Ingresar Dirección"></td>
+                <td width="20%"></td>
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td colspan="2">
+                    <input type="radio" id="mujer" name="genero">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="hombre" name="genero">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="otro" name="genero">
+                    <label for="otro">Otro</label>
+                </td>
+                <td width="20%"></td>
+            </tr>
+
+            <tr>
+                <td width="20%"></td>
+                <td width="30%"><label for="estado">Estado Civil</label></td>
+                <td width="30%">
+                    <select name="persona" id="estado" name="estado-civil">
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viudo">Viudo</option>
+                    </select>
+                </td>
+                <td width="20%"></td>
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td colspan="2">
+                    <textarea name="description" id="description"></textarea>
+                </td>
+                <td width="20%"></td>
+
+            </tr>
         </table>
     </form>
     
